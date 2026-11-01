@@ -1,0 +1,42 @@
+<title>Engineer Conquest</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M16 16c-3-4-6-6-9-6a6 6 0 0 0 0 12c3 0 6-2 9-6s6-6 9-6a6 6 0 0 1 0 12c-3 0-6-2-9-6z%27 fill=%27none%27 stroke=%27%232f7d6d%27 stroke-width=%273%27/%3E%3Ccircle cx=%2725%27 cy=%2710%27 r=%272.6%27 fill=%27%23e0803a%27/%3E%3C/svg%3E">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A hands-on, mastery-based path for interns and new software engineers: engineering habits, how the web and HTTP(S) work, frontend, backend, SaaS and multi-tenancy, a guided tour of the SaaS-Foundation codebase, and software development in the era of AI. Simulated terminal and servers in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/app.css">
+
+<div class="app" id="app">
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#/" aria-label="Engineer Conquest home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path class="bm-loop" d="M16 16c-3-4-6-6-9-6a6 6 0 0 0 0 12c3 0 6-2 9-6s6-6 9-6a6 6 0 0 1 0 12c-3 0-6-2-9-6z"/>
+        <circle class="bm-dot" cx="25" cy="10" r="2.6"/>
+      </svg>
+      <span class="brand-name">Engineer Conquest</span>
+    </a>
+    <nav class="mainnav" aria-label="Main">
+      <a href="#/" data-nav="world">World</a>
+      <a href="#/path" data-nav="path">Path</a>
+      <a href="#/sandbox" data-nav="sandbox">Sandbox</a>
+      <a href="#/guide" data-nav="guide">Field Guide</a>
+      <a href="#/profile" data-nav="profile">Profile</a>
+    </nav>
+    <div class="rankbox" id="rankbox"></div>
+    <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+    </button>
+  </header>
+  <main id="view" class="view" tabindex="-1">
+    <div class="boot">
+      <p class="boot-title">Engineer Conquest</p>
+      <p class="boot-sub">Loading your world…</p>
+      <noscript><p>Engineer Conquest needs JavaScript: it runs a simulated terminal and servers in your browser.</p></noscript>
+    </div>
+  </main>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script type="module" src="js/app.js"></script>
